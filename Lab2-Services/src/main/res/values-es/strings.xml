@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jetcaster</string>
+
+    <string name="connection_error_title">Error de conexión</string>
+    <string name="connection_error_message">No se pudieron cargar los feeds de podcasts.\nRevisa tu conexión a internet e inténtalo de nuevo.</string>
+    <string name="retry_label">Reintentar</string>
+
+    <string name="your_podcasts">Tus podcasts</string>
+    <string name="latest_episodes">Últimos episodios</string>
+
+    <string name="home_library">Tu biblioteca</string>
+    <string name="home_discover">Descubrir</string>
+
+    <string name="discover_toolbar">Descubrir</string>
+    <string name="library_toolbar">Biblioteca</string>
+    <string name="discover_toolbar_content_description">Ícono de pestaña Descubrir</string>
+    <string name="library_toolbar_content_description">Ícono de pestaña Biblioteca</string>
+
+    <string name="updated_longer">Actualizado hace un tiempo</string>
+    <plurals name="updated_weeks_ago">
+        <item quantity="one">Actualizado hace %d semana</item>
+        <item quantity="other">Actualizado hace %d semanas</item>
+    </plurals>
+    <plurals name="updated_days_ago">
+        <item quantity="one">Actualizado ayer</item>
+        <item quantity="other">Actualizado hace %d días</item>
+    </plurals>
+    <string name="updated_today">Actualizado hoy</string>
+
+    <string name="episode_date_duration">%1$s &#8226; %2$d mins</string>
+
+    <string name="cd_account">Cuenta</string>
+    <string name="cd_add">Agregar</string>
+    <string name="cd_back">Atrás</string>
+    <string name="cd_follow">Seguir</string>
+    <string name="cd_following">Siguiendo</string>
+    <string name="cd_forward10">Adelantar 10 segundos</string>
+    <string name="cd_more">Más</string>
+    <string name="cd_not_following">No siguiendo</string>
+    <string name="cd_pause">Pausar</string>
+    <string name="cd_play">Reproducir</string>
+    <string name="cd_replay10">Retroceder 10 segundos</string>
+    <string name="cd_search">Buscar</string>
+    <string name="cd_selected_category">Categoría seleccionada</string>
+    <string name="cd_skip_next">Saltar al siguiente</string>
+    <string name="cd_skip_previous">Saltar al anterior</string>
+    <string name="cd_unfollow">Dejar de seguir</string>
+    <string name="episode_added_to_your_queue">Episodio agregado a la cola</string>
+    <string name="cd_podcast_image">Imagen del podcast</string>
+    <string name="subscribe">Suscribirse</string>
+    <string name="subscribed">Suscrito</string>
+    <string name="see_more">ver más</string>
+    <string name="search_for_a_podcast">Buscar un podcast</string>
+    <string name="an_error_has_occurred">Ha ocurrido un error.</string>
+    <string name="search_rest_title">Búsqueda REST de Podcasts</string>
+    <string name="search_rest_hint">Buscar podcasts en línea...</string>
+    <string name="sync_background_button">Sincronizar ahora (WorkManager)</string>
+</resources>
