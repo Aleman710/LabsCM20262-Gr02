@@ -17,11 +17,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.filled.Clear
-import androidx.compose.material.icons.filled.Refresh
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -44,6 +39,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
@@ -79,7 +75,7 @@ fun SearchRestScreen(
                 navigationIcon = {
                     IconButton(onClick = onBackPress) {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                            painter = painterResource(id = R.drawable.ic_arrow_back),
                             contentDescription = stringResource(R.string.cd_back),
                         )
                     }
@@ -89,7 +85,7 @@ fun SearchRestScreen(
                         onClick = { viewModel.triggerBackgroundSync() },
                     ) {
                         Icon(
-                            imageVector = Icons.Default.Refresh,
+                            painter = painterResource(id = R.drawable.ic_replay_10),
                             contentDescription = stringResource(R.string.sync_background_button),
                         )
                     }
@@ -112,7 +108,7 @@ fun SearchRestScreen(
                 placeholder = { Text(stringResource(R.string.search_rest_hint)) },
                 leadingIcon = {
                     Icon(
-                        imageVector = Icons.Default.Search,
+                        painter = painterResource(id = R.drawable.ic_search),
                         contentDescription = stringResource(R.string.cd_search),
                     )
                 },
@@ -120,7 +116,7 @@ fun SearchRestScreen(
                     if (uiState.query.isNotEmpty()) {
                         IconButton(onClick = { viewModel.onQueryChange("") }) {
                             Icon(
-                                imageVector = Icons.Default.Clear,
+                                painter = painterResource(id = R.drawable.ic_delete),
                                 contentDescription = "Clear",
                             )
                         }
@@ -208,7 +204,7 @@ fun PodcastResultItem(
                     )
                 }
                 Text(
-                    text = podcast.description,
+                    text = podcast.description ?: "",
                     style = MaterialTheme.typography.bodySmall,
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis,
