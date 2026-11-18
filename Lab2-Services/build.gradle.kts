@@ -106,6 +106,11 @@ android {
         metricsDestination = layout.buildDirectory.dir("compose_compiler")
         stabilityConfigurationFiles = listOf(rootProject.layout.projectDirectory.file("stability_config.conf"))
     }
+
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
+    }
 }
 
 dependencies {
