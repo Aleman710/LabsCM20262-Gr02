@@ -97,7 +97,7 @@ Labs20262-Gr02/
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/Isa-Bedoya-UdeA/LabsCM20262-Gr02.git
+   git clone https://github.com/Aleman710/LabsCM20262-Gr02.git
    ```
 
 2. **Open in Android Studio**:
